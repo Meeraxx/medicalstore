@@ -1,0 +1,17 @@
+<section class="header" style="background-color: aquamarine;">
+<div class="container p-5">
+    <div class="row">
+        <div class="col mb-5" *ngFor="let item of painrelief">
+<div class="card" style="width: 18rem;height: 32rem">
+    <img class="card-img-top" src="{{item.img}}"alt="" height="300" width="230" >
+    <div class="card-body">
+      <h5 class="card-title">{{item.name}}</h5>
+    
+      <h5 class="card-title">{{item.price}}</h5>
+      <a (click)="gotoHere(item.id)" class="btn btn-primary">View Product</a>
+    </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  </section>

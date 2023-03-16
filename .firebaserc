@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "medical-store-22348": {
+      "hosting": {
+        "medicalstore": [
+          "medical-store-22348"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "medical-store-22348"
+  }
+}

@@ -19,7 +19,10 @@ import { SinglebabyComponent } from './pages/singlebaby/singlebaby.component';
 import { CartComponent } from './pages/cart/cart.component';
 const routes: Routes = [
   {
-    path : '' ,component: HomepageComponent
+    path : '' ,redirectTo:'loginpage',pathMatch:'full'
+  },
+  {
+    path:'home',component:HomepageComponent
   },
   {
     path:'contactuspage',component:ContactuspageComponent

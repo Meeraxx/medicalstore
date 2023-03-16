@@ -23,36 +23,36 @@
                         <div class="col-md-6">
                           <div class="form-group">
                             <label class="label" for="name">Full Name</label>
-                            <input type="text" class="form-control" name="name" id="name" placeholder="Name">
+                            <input type="text" class="form-control" name="name"  [(ngModel)]="fname" name="fname" id="name" placeholder="Name">
                           </div>
                         </div>
                         <div class="col-md-6"> 
                           <div class="form-group">
                             <label class="label" for="email">Email Address</label>
-                            <input type="email" class="form-control" name="email" id="email" placeholder="Email">
+                            <input type="email" class="form-control" name="email" id="email" placeholder="Email" [(ngModel)]="email" name="email">
                           </div>
                         </div>
                         <div class="col-md-3">
                           <div class="form-group">
                             <label class="label" for="subject">Age</label>
-                            <input type="text" class="form-control" name="Age" id="subject" placeholder="Age">
+                            <input type="text" class="form-control" name="Age" id="subject" placeholder="Age"  [(ngModel)]="age" name="age">
                           </div>
                         </div>
                         <div class="col-md-9">
                           <div class="form-group">
                             <label class="label" for="subject">Phonenumber</label>
-                            <input type="text" class="form-control" name="Phonenumber" id="subject" placeholder="Phonenumber">
+                            <input type="text" class="form-control" name="Phonenumber" id="subject" placeholder="Phonenumber"  [(ngModel)]="phoneno" name="phoneno">
                           </div>
                         </div>
                         <div class="col-md-12">
                           <div class="form-group">
                             <label class="label" for="#">Message</label>
-                            <textarea name="message" class="form-control" id="message" cols="30" rows="4" placeholder="Message"></textarea>
+                            <textarea name="message" [(ngModel)]="msg" class="form-control" id="message" cols="30" rows="4" placeholder="Message"></textarea>
                           </div>
                         </div>
                         <div class="col-md-12">
                           <div class="form-group">
-                            <input type="submit" value="Send Message" class="btn btn-primary">
+                            <input type="submit" value="Send Message" class="btn btn-primary" (click)="submit()">
                             <div class="submitting"></div>
                           </div>
                         </div>

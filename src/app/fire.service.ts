@@ -69,6 +69,15 @@ signUp(email: string, password: string, fname: string,lname:string) {
       alert(err)
     })
   }
+  //cartpage()
+cart(data:any) {
+  const cartCollection = collection(this.fire,'cart')
+  addDoc(cartCollection,data).then(res => {
+    alert("cart added successfully")
+  }).catch(err => {
+    alert(err)
+  })
+}
 
    }
 
